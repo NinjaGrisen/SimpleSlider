@@ -16,10 +16,11 @@ To start the plugin just add:</br>
 Sett your personal feel to it in the CSS and change the settings in the JS settings object. 
 
   var settings = $.extend({ </br>
-      animationSpeed: 200, </br>
-      animationPause: 5000, </br>
-
-      nav: 'dot', </br>
-      arrowNav: true, </br>
-      hoverHandler: true </br>
+  
+      animationSpeed: 200, 
+      animationPause: 5000, 
+      nav: 'dot', 
+      arrowNav: true, 
+      hoverHandler: true 
+      
   }, options);
