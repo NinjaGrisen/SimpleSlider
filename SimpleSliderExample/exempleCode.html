@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Simple Slider | Slideshow</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script src="simpleSlider.js"></script>
+	<meta charset="utf-8"/>
+</head>
+<body>
+
+<div class="container">
+	<h1>Simple Slider exemple</h1>
+
+	<div id="slider">
+		<ul class="slides">
+			<li class="slide">
+				<p class="slideCaption">This color is <a href="http://google.se">LightBlue</a></p>
+				<img class="slideImage" alt="img1" src="img/lightBlue.jpg"/>
+			</li>
+			<li class="slide">
+				<p class="slideCaption">This color is Orange</p>
+				<img class="slideImage" alt="img2" src="img/orange.jpg"/>
+			</li>
+			<li class="slide">
+				<p class="slideCaption">This color is Purple</p>
+				<img class="slideImage" alt="img3" src="img/purple.jpg"/>
+			</li>
+			<li class="slide">
+				<p class="slideCaption">This color is Blue</p>
+				<img class="slideImage" alt="img4" src="img/blue.jpg"/>
+			</li>
+			<li class="slide">
+				<p class="slideCaption">This color is Pink</p>
+				<img class="slideImage" alt="img5" src="img/pink.jpg"/>
+			</li>
+			
+		</ul>
+	</div>
+
+</div>
+
+<script>
+	$( "#slider" ).simpleSlider();
+</script>
+
+</body>
+</html>

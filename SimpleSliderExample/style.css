@@ -1,0 +1,153 @@
+@font-face{
+  font-family: LeanOSansFy;
+  src: url(fonts/LeanOSansFY-Light.ttf),
+  url(fonts/LeanOSansFY-Light.eot); /* IE */
+}
+@font-face{
+  font-family: Coco;
+  src: url(fonts/ttchocolates-regular-webfont.ttf),
+  url(fonts/ttchocolates-regular-webfont.eot);
+}
+
+html {
+  box-sizing: border-box;
+}
+body{
+  margin: 0;
+  padding: 0;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+#slider{
+  position: relative;
+  width: 750px;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  margin: 0 auto;
+}
+
+#slider .slides{
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+#slider .slide,
+#slider .slide img{
+  float: left;
+  list-style-type: none;
+}
+
+#slider .slide img{
+  width: 100%;
+}
+
+.slideCaption{
+  position: absolute;
+  background: rgba(255, 255, 255, .5);
+  width: 100%;
+  padding: 20px 0;
+  margin: 0;
+}
+
+#dotsNavigation{
+  position: absolute;
+  z-index: 98;
+  bottom:0px;
+  left: 50%;
+  margin-left: -100px; //increase with 20px for each image
+  list-style-type: none;
+}
+.dotNavigation{
+  display:inline-block;
+  cursor: pointer;
+  height:10px;
+  width: 10px;
+  margin-left: 10px;
+  border:2px solid #222;
+  border-radius: 50%;
+}
+.dotNavigation:hover,
+.active{
+  background:rgba(255, 255, 255, .8);
+}
+
+#imagesNavigation{
+  position: absolute;
+  left:50%;
+  margin-left: -230px;
+  bottom: -10px;
+}
+
+.imageNavigation{
+  display: inline-block;
+  border:1px solid black;
+  padding: 10px;
+  margin: 10px;
+  width: 50px;
+  height:50px;
+  background-size: 50px 50px;
+  cursor: pointer;
+}
+
+.previous,
+.next{
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background: rgba(299, 299, 299, .7);
+  z-index: 9998;
+  top:50%;
+  left:10px;
+  cursor: pointer;
+  text-align: center;
+  border-radius: 50%;
+  font-size: 25px;
+  line-height: 0px;
+  color: black;
+  font-weight: 700;
+  opacity: 1;
+
+  -webkit-transition: opacity 250ms ease-in-out;
+     -moz-transition: opacity 250ms ease-in-out;
+      -ms-transition: opacity 250ms ease-in-out;
+       -o-transition: opacity 250ms ease-in-out;
+          transition: opacity 250ms ease-in-out;
+
+          user-select: none;
+      -ms-user-select: none;
+     -moz-user-select: none;
+  -webkit-user-select: none;
+-webkit-touch-callout: none;
+    
+       
+        
+}
+.next{
+  left: auto;
+  right: 10px;
+}
+
+.hideArrow{
+  opacity: 0;
+}
+
+
+
+
+ #slider{
+   margin: 30px auto 0 auto; //Till visning
+  }
+  @media only screen and (max-width: 970px){
+    .container{
+      width: 100%;
+    }
+  }
+  @media only screen and (max-width: 750px) {
+    
+    #slider{
+      width: 100%;
+    }
+}
